@@ -7,7 +7,7 @@ interface TabelaProps {
     clienteExcluido?: (cliente: Cliente) => void
 }
 
-export default function (props: TabelaProps) {
+export default function Tabela(props: TabelaProps) {
 
     const exibirAcoes = props.clienteExcluido || props.clienteSelecionado
 
