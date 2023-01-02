@@ -18,7 +18,7 @@ const [idade,setIdade] = useState(props.cliente.idade ?? 0)
 
     return (
         <div>
-            {id ? <Entrada somenteLeitura text="ID" valor={'Teste'} className='mb-5'/> : false} 
+            {id ? <Entrada somenteLeitura text="ID" valor={id} className='mb-5'/> : false} 
             <Entrada text="Nome" valor={nome} valorMudou={setNome} className='mb-5'/>
             <Entrada text="Idade" tipo="number" valor={idade} valorMudou={setIdade}/>
 
