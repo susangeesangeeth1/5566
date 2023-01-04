@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <Tabela clientes={clientes} clienteSelecionado={selecionarCliente} clienteExcluido={excluirCliente} />
           </>
-        ) : (<Formulario cliente={cliente} clienteMudou={salvarCliente} cancelar={() =>exibirTabela} />)}
+        ) : (<Formulario cliente={cliente} clienteMudou={salvarCliente} cancelar={exibirTabela} />)}
 
       </Layout>
 
