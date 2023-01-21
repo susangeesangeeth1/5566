@@ -24,11 +24,11 @@ const [idade,setIdade] = useState(props.cliente.idade ?? 0)
 
             <div className=" flex justify-end mt-7">
                 <Button className="mr-2" onClick={() => props.clienteMudou?.(new Cliente(nome,+idade,id))}>
-                    {id? "Alterar" : "Salvar"}
+                    {id? "Alterar" : "Add"}
                 </Button>
 
                 <Button onClick={props.cancelar}>
-                    Cancelar
+                    Cancel
                 </Button>
             </div>
         </div>
